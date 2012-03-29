@@ -15,6 +15,9 @@ class RelationshipTest {
 
         s.delete(list.get(0))
 
+        //work around is "on delete cascade" is turned on in the database
+//        s.createQuery("delete from Parent where id = :id").setParameter("id", 1L).executeUpdate()
+
         list = s.createCriteria(Parent.class).list()
         assert 0 == list.size()
 
