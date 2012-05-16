@@ -4,12 +4,18 @@
 
 <hibernate-configuration>
 <session-factory>
-        <property name="hibernate.hbm2ddl.auto">validate</property>
+        <property name="hibernate.hbm2ddl.auto">create-drop</property>
 
         <property name="current_session_context_class">thread</property>
 
-        <mapping class="Parent"/>
-        <mapping class="Child"/>
+        <!--<mapping class="Parent"/>-->
+        <!--<mapping class="Child"/>-->
+
+        <!--<mapping class="Dummy"/>-->
+
+        <mapping class="demo.HousePost"/>
+        <mapping class="demo.RoomPost"/>
+        <mapping class="demo.PostImage"/>
 
     </session-factory>
 </hibernate-configuration>
