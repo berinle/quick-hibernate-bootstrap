@@ -11,7 +11,7 @@ class RoomPost extends BasePost {
 
     String name
 
-    @OneToMany(cascade = CascadeType.ALL)
-    @JoinTable(name="post_images", joinColumns = [@JoinColumn(name="post_id")])
-    List<PostImage> images = []
+//    @OneToMany(cascade = CascadeType.ALL)
+//    @JoinTable(name="post_images", joinColumns = [@JoinColumn(name="post_id")])
+//    List<PostImage> images = []
 }

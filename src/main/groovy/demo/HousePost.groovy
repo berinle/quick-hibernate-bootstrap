@@ -17,14 +17,8 @@ class HousePost extends BasePost {
 
     String name
 
-    @OneToMany(cascade = CascadeType.ALL)
-//    @JoinTable(name = "post_images", joinColumns = { @JoinColumn(name="post_id"), @JoinColumn(name = "image_id") })
-//    @JoinTable(name = "post_images")
-    @JoinTable(name="post_images", joinColumns = [@JoinColumn(name="post_id")])
-    List<PostImage> images = []
+//    @OneToMany(cascade = CascadeType.ALL)
+//    @JoinTable(name="post_images", joinColumns = [@JoinColumn(name="post_id")])
+//    List<PostImage> images = []
 
-    /*void addImage(PostImage image) {
-        images << image
-
-    }*/
 }
