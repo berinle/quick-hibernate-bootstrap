@@ -16,6 +16,7 @@
         <mapping class="demo.HousePost"/>
         <mapping class="demo.RoomPost"/>
         <mapping class="demo.PostImage"/>
+        <mapping class="Department"/>
 
     </session-factory>
 </hibernate-configuration>
